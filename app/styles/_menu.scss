@@ -1,0 +1,65 @@
+// ----------------------------------------------------------------------------
+// Menu
+
+#main_menu {
+  ul {
+    margin: 0;
+    padding: 0;
+    left: 98px;
+    max-height: 110px;
+
+    li {
+      display: inline-block;
+      padding: 0 1.5em 0 1.5em;
+      font-family: $serif;
+      font-weight: 600;
+      font-size: 1rem;
+      color: $navy; 
+      list-style: none;
+
+
+      a {
+        display: inline-block;
+        line-height: 6em;
+      }
+    }
+  }
+  .brand {
+    display: inline-block;
+    float: left;
+    width: 180px;
+    position: relative;
+    top: 32px;
+    margin: 0 48px 0 60px;
+  }
+  
+  .utils {
+    position: absolute;
+    width: 176px;
+    top: 18px; 
+    right: 3.75em;
+    display: block;
+    margin: 0 auto;
+    opacity: .93;
+    background: $mesa;
+    padding: 24px 32px 18px 32px; 
+    z-index: 100;
+    transition: width .1s,opacity .3s;
+    
+    .phone {
+      font-family: $serif;
+      font-weight: 600;
+      font-size: 1.25rem;
+      line-height: 1.3em;
+      color: white;
+    }
+
+    .email {
+      font-family: $serif;
+      font-weight: 300;
+      font-size: 0.875rem;
+      line-height: 1.5em;
+      color: white; 
+    }
+  }    
+}

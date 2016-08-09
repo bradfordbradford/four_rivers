@@ -1,0 +1,122 @@
+$serif: "Lora", serif;
+$sans: "Lato", sans-serif;
+
+// ----------------------------------------------------------------------------
+body {
+  background: $cream;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: $navy;
+  transition: all 200ms;
+}
+
+a:link {
+  color: inherit;
+} 
+
+a:visited{
+  color: inherit;
+} 
+
+a:hover{
+  color: $mesa;
+} 
+
+a:active{
+  color: $mesa;
+} 
+
+
+
+h1 {
+	font-family: $serif;
+	font-size: 3rem;
+	line-height: 1.3;
+}
+
+h2 {
+	font-family: $serif;
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+
+h3 {
+	font-family: $serif;
+	font-size: 1.25rem;
+	line-height: 1.3;
+}
+
+h4 {
+	font-family: $sans;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 0.875rem;
+	line-height: 1.2;
+}
+h5 {
+  font-family: $sans;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.75rem;
+  line-height: 1.2;
+}
+
+p { 
+	font-family: $sans;
+	font-size: 1em;
+	line-height: 36px;
+
+  &.lead {
+    font-size: 1.5rem;
+    line-height: 36px;
+    font-family: $serif;
+  }
+}
+
+
+
+article {  
+  h4 {
+    color:$mesa;
+  }
+  h2 { 
+    color: $navy; 
+  }
+  
+  p {
+    color: $navy;
+  } 
+
+}
+
+
+
+hr.small {
+  display: block;
+  width: 64px;
+  margin: 1.5em 0;
+  border-top: 0;
+  border-bottom: 4px solid #E6E3E1;
+  height: 0;
+  border-right: 0;
+  border-left: 0;
+  &.centered {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+
+
+
+//
+// Article
+//
+.article {
+	max-width:35rem;
+	padding: 0 5rem;
+}

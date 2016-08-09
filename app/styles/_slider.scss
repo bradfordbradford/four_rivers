@@ -1,0 +1,56 @@
+// ----------------------------------------------------------------------------
+// Sliders
+.slick-slide,
+.slider_wrap {position: relative;}
+
+.caption_slider {
+	
+	&,figure,figcaption {
+		margin:0;
+		padding:0;
+	}
+
+
+	h5 {
+		color: $mesa;
+		margin: 1rem 0;
+	}
+	p {
+		font-family: $serif;
+	}
+
+}
+
+// Caption
+.slick_cap {
+	background: rgba($navy, .94);
+	color: #fff;
+	// height:8.25rem;
+	max-width: 35rem;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 10;
+	.cp {
+		padding:1.5rem 2.25rem;
+	}
+}
+
+// Arows
+.slick_arrows {
+	float: left;
+	padding: 2.125rem 2.25rem;
+	.arrow {
+		margin-bottom: 1rem;
+		height:46px;
+		width:46px;
+		fill: #fff;
+		cursor: pointer;
+		position: relative;
+		left:0;
+		top:0;
+		display: block !important;
+		&:last-child {margin: 0;}
+	}
+}

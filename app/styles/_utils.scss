@@ -1,0 +1,90 @@
+// ----------------------------------------------------------------------------
+// Utilities
+
+
+.panel {
+  // background: #F7F5F3;
+  padding: 7.0rem 3.75rem;
+}
+
+//	
+// Fills
+// 
+.fill_cream {
+	background-color: $cream !important;
+}
+.fill_white {
+	background-color: #fff !important;
+}
+
+// Spacing
+//
+.b_mar {
+	margin-bottom: 2.5rem !important;
+}
+.t_mar {
+	margin-top: 3.25rem !important;
+}
+
+//
+// Position Relative (good for wrapping .center_v_h)
+//
+.pos_r {
+  position: relative;
+}
+// Center Vertically + Horizontally
+
+.center_v_h {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate3d(-50%,-50%,0) !important;
+}
+
+// ----------------------------------------------------------------------------
+#about {
+	padding-top: 0;
+
+	position: relative;
+
+    &:before {
+    	content:'';
+    	right:0;
+    	position: absolute;
+    	background: url('../images/FRC_About.jpg');
+    	background-position: top right !important;
+	    background-repeat: no-repeat !important;
+	    background-attachment: fixed !important;
+	    background-size: 500px !important;
+	    width:500px;
+	    height:706px;
+	    z-index: 10;
+    }
+
+}
+
+
+// 
+// Home
+//
+#intro {
+	padding-bottom: 120px;
+}
+#about_projects {
+	position: relative;
+	&:after {
+		height:20rem;
+		content:'';
+		position: absolute;
+		z-index: 0;
+		left: 0;
+		bottom: 0;
+		width:100%;
+		background:$cream;
+	}
+	.slider_wrap {
+		position: relative;
+		z-index:5;
+	}
+}
+

@@ -1,0 +1,36 @@
+// ----------------------------------------------------------------------------
+// Headers
+
+//
+// Section Header
+// 
+.section_header {
+	margin: 1.5rem auto 2.5rem;
+	h4 {
+		color: $mesa;
+		font-size:  (14/16)rem;
+	}
+}
+
+//
+// Hero
+//
+.hero {
+  position: relative;
+	.cp {
+		position: absolute;
+		color:white;
+		top:30%;
+		left: 10%;
+	}
+	
+	// Brand
+	.brand {
+		width:100%;
+		max-width: 15.5rem;
+		margin-bottom: 1.5rem;
+	}
+	&.centered {
+		text-align: center;
+	}
+}
